@@ -97,7 +97,7 @@ public class MixinServerPlayerGameMode {
         );
     }
 
-    // disable distance check when doing cross-portal interaction
+    /*// disable distance check when doing cross-portal interaction
     @WrapOperation(
         method = "handleBlockBreakAction",
         at = @At(
@@ -112,7 +112,7 @@ public class MixinServerPlayerGameMode {
             return true;
         }
         return original.call(instance, blockPos, v);
-    }
+    }*/
 
     // record the world for the destroying pos
     @Inject(
